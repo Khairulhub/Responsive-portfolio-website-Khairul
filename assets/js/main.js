@@ -29,11 +29,23 @@ modalCloses.forEach((mc) =>{
     })
 })
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
-
+var mixerPortfolio = mixitup('.work_container', { //catch the main div
+    selectors: {
+        target: '.work_card'    //this is for catch the card
+    },
+    animation: {
+        duration: 300
+    }
+});
 
 /* Link active work */ 
+const linkWork = document.querySelectorAll('.work_item');
 
-
+function activeWork(){
+    linkWork.forEach(l=> l.classList.remove('active-work'));
+    this.classList.add('active-work');
+}
+ linkWork.forEach(l=> l.addEventListener('click', activeWork));
 /*=============== SWIPER TESTIMONIAL ===============*/
 
 
