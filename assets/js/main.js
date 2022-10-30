@@ -47,7 +47,25 @@ function activeWork(){
 }
  linkWork.forEach(l=> l.addEventListener('click', activeWork));
 /*=============== SWIPER TESTIMONIAL ===============*/
-
+var swiper = new Swiper(".testimonial_container", {
+    spaceBetween: 24,
+    loop: true,
+    grabCursor: true,
+    breakpoints: {
+        576: {
+          slidesPerView: 2,
+          
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 48,
+        }
+      },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
