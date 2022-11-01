@@ -976,6 +976,12 @@ body.light-theme{
 }
 .contact_contaner{
  grid-template-columns: repeat(2,1fr);
+ column-gap: 6rem;
   
+}
+.footer_social-link{
+  font-size: 1.25rem;
+  padding: .4rem;
+  border-radius: .5re;
 }
 }
